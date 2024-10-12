@@ -2,13 +2,17 @@
     font-family: "Sixtyfour Convergence";
     src: url(myfont.ttf);
 }
+@font-face {
+    font-family: edu-australia;
+    src: url(edu-australia.ttf);
+}
 
 p {
     border: 3px #0F0 solid;
     color:rgb(126, 20, 175);
     
     /* text-align: justify; */
-    font-family: "Sixtyfour Convergence";
+    font-family: edu-australia;
     font-size: 1.6em;
 
 }

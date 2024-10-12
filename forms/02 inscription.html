@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <form action="#">
+        <table  cellspacing="0" cellpadding="5">
+            <tr>
+                <td>
+                   <label for="nom">Nom</label> 
+                </td>
+                <td>
+                    <input type="text" name="nom" id="nom">
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="prenom">Prénom</label> 
+                </td>
+                <td>
+                    <input type="text" name="prenom" id="sexe">
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="sexe">Sexe</label> 
+                </td>
+                <td>
+                    <input type="radio" name="sexe" id="sexe" value="F" checked> F
+                    <input type="radio" name="sexe" id="sexe" value="M"> M
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="dateNaissance">Date de Naissance</label> 
+                </td>
+                <td>
+                    <input type="date" name="dateNaissance" id="dateNaissance">
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="niveau">Niveau d'études</label> 
+                </td>
+                <td>
+                    <select type="text" name="niveau" id="niveau">
+                        <option value="nivauBac">niveau bac</option>
+                        <option value="bac">bac</option>
+                        <option value="bac2">bac + 2</option>
+                        <option value="licence">Licence</option>
+                        <option value="Maseter">Master</option>
+                    </select>
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="specialite">Spécialité</label> 
+                </td>
+                <td>
+                    <input type="text" name="specialite" id="specialite" list="listSpecialite">
+
+                    <datalist id="listSpecialite">
+                        <option value="DEV">
+                        <option value="ID">
+                        <option value="GE">
+                        <option value="AA">
+                        <option value="GC">
+                    </datalist>
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="telphone">Téléphone</label> 
+                </td>
+                <td>
+                    <input type="tel" name="telphone" id="telphone">
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="email">Email</label> 
+                </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+                  <tr>
+                <td>
+                   <label for="webSite">Site web</label> 
+                </td>
+                <td>
+                    <input type="url" name="webSite" id="webSite">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <label for="adresse">Adresse</label> 
+                </td>
+                <td>
+                   <textarea name="adresse" id="adresse"></textarea> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="photo">Photo</label>
+                </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="envoyer">
+                    <input type="reset" value="réinitialiser">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

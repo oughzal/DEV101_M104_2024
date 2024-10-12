@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="#" method="post" >
+    <input type="search"> <br>
+    <label for="">Nom </label>
+    <input type="text" required name="nom" id="nom" maxlength="6"> <br>
+
+     <label for="">prenom </label>
+    <input type="text" required placeholder="Votre nom" name="nom" id="nom"> <br>
+     <label for="">date naissance </label>
+    <input type="date" autofocus pattern="dd/dd/dddd" name="nom" id="nom"> <br>
+    <input type="tel" pattern="d{10}">
+     <label for="">password  </label>
+    <input type="password" name="nom" id="nom"> <br>
+    <label for="">photo  </label>
+    <input type="file" name="nom" id="nom"> <br>
+    <input type="range" min="10" max="30"> <br>
+    <input type="color"> 
+    <br>
+    <input type="submit">
+    <input type="reset"> <br>
+
+    <input type="checkbox" name="langage" value="html" checked> HTML 
+    <input type="checkbox" name="langage" value="Python"> Python
+    <input type="checkbox" name="langage" value="javascript" checked> Javacript 
+    <input type="checkbox" name="langage" value="PHP"> PHP 
+<br>
+    <input type="radio" name="genre" value="F" checked> F 
+    <input type="radio" name="genre" value="M"> M 
+
+
+    <br>
+
+    <textarea name="description" id="description">
+        text début
+    </textarea> <br>
+
+    <select  name="ville" id="ville">
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+        <option value="khenifra">KHénifra</option>
+    </select>
+ <input type="button" value="envoyer">
+<br>
+ <input type="number" value="0" min="0" max="1000" step="30">
+    
+
+ <label for="niveau">Niveau</label>
+ <input type="text" id="niveau" list="niveaux">
+ <datalist id="niveaux">
+    <option value="TS">
+    <option value="T">
+    <option value="Q">
+    <option value="S">
+ </datalist>
+</form>
+
+</body>
+</html>

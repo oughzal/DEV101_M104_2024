@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Sixtyfour Convergence";
+    src: url(myfont.ttf);
+}
+
+p {
+    border: 3px #0F0 solid;
+    color:rgb(126, 20, 175);
+    
+    /* text-align: justify; */
+    font-family: "Sixtyfour Convergence";
+    font-size: 1.6em;
+
+}

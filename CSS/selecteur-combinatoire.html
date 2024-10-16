@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  combinatoire */
+        seletor1 [] sector2 {}
+        /* direct child */
+        ul > li {
+            color: blue;
+        }
+        #d1>p{
+            color: red;
+        }
+        /* descendant */
+        #d1 p{
+            color: rgb(9, 161, 39);
+        }
+    </style>
+</head>
+<body>
+    <ul id="myList">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ul>
+    <div id="d1">
+        <p>p1</p>
+        <div>
+            <p>p2</p>
+            <p>p3</p>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

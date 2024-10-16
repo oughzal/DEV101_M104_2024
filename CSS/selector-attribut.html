@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px blue dotted;
+        }
+        /* a l'attribut title */
+        p[title]{color: red;}
+        /* l'attribit avec valeur exacte */
+        p[title="p1 title"]{color: red;}
+        /*  qui commence ... */
+        p[title^="p1"]{color: red;}
+        /*  qui se teermine par  */
+        p[title$="tle"]{color: red;}
+        /*  qui contient */
+        p[title*="tit"]{color: red;}
+        p[title~="title"]{color: red;}
+      
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.   </p>
+    <p title="p1 title">Lorem ipsum dolor sit amet consectetur adipisicing.   </p>
+    <p title="p2">Lorem ipsum dolor sit amet consectetur adipisicing.   </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.   </p>
+</body>
+</html>

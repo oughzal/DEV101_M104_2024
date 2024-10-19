@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mini-projet.css">
+    <style>
+        #container>div{
+    border: 2px #eee solid;
+    /* display: grid;
+    align-items: center;
+    justify-content: center; */
+    /* font-size: 2em; */
+    font-weight: bold;
+    }
+    #container{
+        display: grid;
+        grid-template-areas:
+        "logo logo logo logo logo logo" 
+        "nav nav nav nav nav nav"
+        "main main main main sidebar sidebar"
+        "article1 article1 article2 article2 article3 article3"
+        "footer footer footer footer footer footer ";
+        gap :5px;
+        width: 90vw;
+        margin: auto;
+    }
+    #logo{
+        grid-area: logo;
+    }
+    #nav{
+        grid-area: nav;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    #main{
+        grid-area: main;
+    }
+    #sidebar{
+        grid-area: sidebar;
+    }
+    #articles{
+        grid-area: articles;
+        display: flex;
+        width: 100%;
+    }
+    #footer{
+        grid-area: footer;
+        background-color: gray;
+    }
+    #logo>img{
+        width: 80px;
+    }
+    #nav>ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #nav li {
+        display: inline-block;
+    }
+    #nav li:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    #main>img{
+        width: 100%;
+    }
+    #articles img{
+        width: 100px;
+    }
+    #footer>ul{
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+    #footer li{
+        display: inline-block;
+        width: 80px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <img src="../assets/images/ofppt.png" alt="">
+        </div>
+        <div id="nav">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+                <li>Link 5</li>
+                <li>Link 6</li>
+            </ul>
+        </div>
+        <div id="main">
+            <img src="img2.webp" alt="">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad tempora at molestiae praesentium id libero alias excepturi rem! Est, eligendi soluta? Distinctio omnis a ducimus dolores deserunt, commodi incidunt?</p>
+        </div>
+        <div id="sidebar">
+            <h1>hot items</h1>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+
+            <h1>hot items</h1>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+        </div>
+                <div id="article1">
+                    <img src="img2.webp" alt="">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore mollitia porro commodi placeat quae ratione repudiandae itaque aut voluptatibus!</p>
+                </div>
+                <div id="article2">
+                    <img src="img2.webp" alt="">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore mollitia porro commodi placeat quae ratione repudiandae itaque aut voluptatibus!</p>
+                </div>
+                <div id="article3">
+                    <img src="img2.webp" alt="">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore mollitia porro commodi placeat quae ratione repudiandae itaque aut voluptatibus!</p>
+                </div>
+    
+       
+        <div id="footer">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body{
+    width: 90vw;
+    margin: auto;
+}
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+#menu>li{
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+}
+
+#menu>li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#left{
+    width: 65vw;
+    float: left;
+    border: 1px #eee solid;
+}
+#left img{
+    width: 100%;
+}
+#right{
+    width: 20vw;
+    float: right;
+    border: 1px #eee solid;
+    
+}
+.clear{
+    clear: both;
+}
+h1{
+    font-size: 16pt;
+}
+.sideMenu{
+    background-color: #eee;
+    
+}
+.sideMenu>li{
+    padding: 10px;
+}
+#articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#articles>div{
+    width: 30%;
+    border: 1px #eee solid;
+    padding: 10px;
+}
+#articles img{
+    width: 100%;
+}

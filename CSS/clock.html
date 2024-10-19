@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            width: 500px;
+            height: 500px;
+            background: url(clock2.png);
+            background-size: contain;
+            position: relative;
+        }
+        #clock>img{
+            position: absolute;
+            bottom: 46.5%;
+            left: 45.5%;
+            transform-origin: 50% 91.6% ;
+            transition-duration: 3s;
+            color: red;
+        }
+        #clock:hover>#hand{
+            transform: rotate(760deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <img id="hand" src="clock-hand1.svg" alt="" height="40%">
+    </div>
+</body>
+</html>

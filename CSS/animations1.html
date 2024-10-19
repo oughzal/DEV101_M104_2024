@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            border: 2px #000 solid;
+            border-radius: 50%;
+        }
+        #container>div{
+            height: 4px;
+            width: 40%;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform-origin: left center;
+            transition-duration: 2s;
+
+        }
+        #d1{background:url(clock-hand.svg); rotate: 30deg; }
+        #d2{background-color: blue;rotate: -230deg;}
+        #d3{background-color: green;rotate: 80deg;}
+        #container:hover>#d1{transform: rotate(60deg);}
+        #container:hover>#d2{transform: rotate(-130deg);}
+        #container:hover>#d3{transform: rotate(90deg);}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="d1"></div>
+
+        <div id="d2"></div>
+        <div id="d3"></div>
+    </div>
+    <img src="clock-hand.svg" alt="" height="300">
+</body>
+</html>

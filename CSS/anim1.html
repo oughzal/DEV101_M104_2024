@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+        }
+        #d1{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            background-color: blue;
+            position: relative;
+            transition-duration: 2s;
+            top :30px;
+        }
+        #d1{
+            /* transition: width 1s, height 6s; */
+            /* transform: translate(400px,400px) rotate(7000deg); */
+            animation-name: key2;
+            animation-duration: 5s;
+            
+         }
+         @keyframes key1 {
+            0% {
+                background-color: cadetblue;
+            }
+            100% {
+                background-color: red;
+                border-radius: 50%;
+            }
+         }
+         @keyframes key2 {
+            0% { background-color: black; top:20px;left:20px;border-radius: 50%;}
+            20% { background-color: blue; top:20px;left:200px;;border-radius: 0%}
+            40% { background-color: yellow; top:200px;left:200px;;border-radius: 50%;}
+            60% { background-color: red; top:200px;left:20px;;border-radius: 50%;}
+            80% { background-color: rgb(40, 3, 128); top:20px;left:20px;;border-radius: 0%;
+            }
+            100% { background-color: rgb(231, 113, 3); top:20px;left:20px;;border-radius: 50%;}
+         }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+</body>
+</html>
